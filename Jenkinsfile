@@ -5,8 +5,8 @@ pipeline {
         stage('testing pipeline') {
            steps {
 		echo 'test pipeline'
-                sh 'mkdir from-jenkins'
-                sh 'touch from-jenkins/test.txt'
+                bat 'mkdir from-jenkins'
+                bat 'touch from-jenkins/test.txt'
            }
         }
     }
